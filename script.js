@@ -188,6 +188,14 @@ document.querySelectorAll('input[name="size"]').forEach((input) => {
     order.size = this.value;
     console.log(order);
     updateCup();
+    updateSummary();
+  });
+});
+document.querySelectorAll('input[name="size"]').forEach((input) => {
+  input.addEventListener("change", function () {
+    order.size = this.value;
+    console.log(order);
+    updateCup();
     //updateSummary();
   });
 });
